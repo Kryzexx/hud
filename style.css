@@ -1,0 +1,795 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: grey;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 540px;
+    height: 400px;
+    position: relative;
+    left: 71.60%;
+}
+
+.up-line {
+    display: flex;
+}
+
+.time-cont {
+    width: 127.29px;
+    height: 42.8px;
+    position: relative;
+    top: 27px;
+    display: flex;
+}
+
+.hour {
+    font-weight: 800;
+    line-height: 33.45px;
+    font-size: 27.44px;
+    color: #FFFFFF;
+}
+
+.date span{
+    font-size: 11.76px;
+    font-weight: 600;
+    line-height: 14.34px;
+    letter-spacing: 0.19em;
+    position: relative;
+    bottom: 15px;
+    left: 7%;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.month {
+    width: 39.29px;
+    height: 28.06px;
+    background: #49d350;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.month span {
+    font-size: 12.36px;
+    font-weight: bold;
+    line-height: 15.85px;
+    width: 25px;
+    height: 14px;
+}
+
+.star-cont {
+    display: flex;
+    position: relative;
+    top: 20px;
+    left: 7px;
+}
+
+.star {
+    width: 27.31px;
+    height: 27.31px;
+    transform: rotate(10.6deg);
+}
+
+.logo-bar {
+    display: flex;
+}
+
+.criminal {
+    position: relative;
+    left: 62%;
+    bottom: 15px;
+    font-family: 'Mukta';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21.5212px;
+    line-height: 36px;
+    letter-spacing: 0.05em;
+    background: linear-gradient(180deg, #FFFFFF 30.17%, rgba(255, 255, 255, 0) 110.34%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    width: fit-content;
+    height: fit-content;
+}
+
+.roleplay {
+    font-family: 'Mukta';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13.0648px;
+    line-height: 22px;
+    letter-spacing: 0.19em;
+    color: rgba(255, 255, 255, 0.23);
+    position: relative;
+    top: 17px;
+    left: 42%;
+    width: fit-content;
+}
+
+.logo-img {
+    position: relative;
+    left: 43%;
+    bottom: 40px;
+}
+
+.online {
+    display: flex;
+    position: relative;
+    bottom: 30px;
+}
+
+.id-number {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18.5623px;
+    line-height: 23px;
+    color: #00FF66;
+    position: relative;
+    left: 35.30%;
+}
+
+.id {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19.3244px;
+    line-height: 20px;
+    color: #FFFFFF;
+    position: relative;
+    left: 36.30%;
+    margin-top: 2px;
+}
+
+.online-p {
+    position: relative;
+    left: 40%;
+    display: flex;
+    gap: 6px;
+}
+
+.online-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19.9409px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 17px rgba(0, 0, 0, 0.25);
+}
+
+.online-text span {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 19.9409px;
+    line-height: 24px;
+    color: #23FF53;
+    margin-left: 5px;
+}
+
+.ip-cont {
+    background: rgba(0, 0, 0, 0.38);
+    border-radius: 68.7727px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 45%;
+    height: 30px;
+    width: 92px;
+}
+
+.ip-cont span {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14.2939px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.gun-line {
+    position: relative;
+    bottom: 20px;
+    display: flex;
+    justify-content: end;
+}
+
+.gun {
+    margin-right: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15.775px;
+    line-height: 17px;
+    color: rgba(255, 255, 255, 0.93);
+}
+
+.ammo-line {
+    position: relative;
+    bottom: 19px;
+}
+
+.ammo-cont {
+    background: linear-gradient(270.27deg, rgba(0, 0, 0, 0.52) 0.23%, rgba(0, 0, 0, 0) 99.79%); 
+    border-radius: 7.5px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    width: 144px;
+    height: 34px;
+    position: relative;
+    left: 72%;
+    display: flex;
+}
+
+.ammo-cont span{
+    position: relative;
+    left: 80%;
+    top: 5px;
+}
+
+.ammo-cont span:nth-child(2) {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16.77778px;
+    line-height: 12px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.ammo-svg {
+    background: rgba(0, 0, 0, 0.63);
+    border-radius: 7.5px;
+    position: relative;
+    left: 35%;
+    width: 35px;
+    height: 34px;
+    display: flex;
+    gap: 0;
+}
+
+.ammo-img {
+    width: fit-content;
+    height: fit-content;
+    margin-left: 3px;
+    margin-top: 2px;
+}
+
+.gift-hour-cont {
+    width: 284px;
+    height: 85px;
+    background: linear-gradient(266.14deg, rgba(255, 122, 0, 0.60) -3.61%, rgba(255, 122, 0, 0) 83.75%);
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    left: 46.9%;
+}
+
+.gift-text {
+    font-family: "BPG Nino Mtavruli", sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 15.9416px;
+    line-height: 13px;
+    color: #FFFFFF;
+    position: relative;
+    top: 18px;
+    left: 20%;
+    width: fit-content;
+}
+
+.gift-ltext {
+    position: relative;
+    top: 5px;
+}
+
+.gift-ltext span:nth-child(1) {
+    font-family: "BPG Nino Mtavruli", sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 15.41663px;
+    line-height: 10px;
+}
+
+.gift-ltext span:nth-child(2) {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16.9012px;
+    line-height: 16px;
+    text-align: right;
+    letter-spacing: 0.02em;
+    color: #FFA318;
+    text-shadow: 0px 0px 14.3px rgba(255, 107, 0, 0.6);
+}
+
+
+.gift-imgs {
+    position: relative;
+    left: 10%;
+    bottom: 20%;
+    width: fit-content;
+    height: fit-content;
+}
+
+.trophy-img {
+    width: fit-content;
+    height: fit-content;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transform: matrix(1, 0.01, -0.01, 1, 0, 0);
+}
+
+.elapsed-time {
+    width: 190px;
+    height: 18px;
+    background: linear-gradient(270.17deg, rgba(255, 184, 0, 0.26) 0.15%, rgba(255, 199, 0, 0) 99.86%);
+    border-radius: 5.5px;
+    position: absolute;
+    top: 45px;
+    left: -40%;
+}
+
+.elapsed-text {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.elapsed-text {
+    margin-top: 3px;
+    margin-left: 10px;
+}
+
+.elapsed-text span:nth-child(1){
+    font-family: "BPG Nino Mtavruli", sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 15.41663px;
+    line-height: 10px;
+    color: rgba(255, 255, 255, 0.87);
+    margin-top: 3px;
+}
+
+.elapsed-text span:nth-child(2) {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15.6628px;
+    line-height: 13px;
+    color: #FFFFFF;
+}
+
+.admin-line {
+    position: relative;
+    top: 20px;
+}
+
+.admin-cont {
+    background: linear-gradient(270.17deg, rgba(255, 0, 0, 0.196) 0.15%, rgba(255, 199, 0, 0) 99.86%);
+    border-radius: 6px;
+    width: 272.17px;
+    height: 50px;
+    position: relative;
+    left: 50%;
+}
+
+.admin-regime {
+    background: linear-gradient(269.89deg, rgba(255, 67, 67, 0.42) 0.07%, rgba(255, 67, 67, 0.18) 99.89%);
+    backdrop-filter: blur(1.52926px);
+    border-radius: 6px;
+    transform: matrix(1, 0, -0.02, 1, 0, 0);
+    width: 159.28px;
+    height: 42.94px;
+    position: relative;
+    left: 40%;
+    top: 3px;
+    display: flex;
+}
+
+.regime-text {
+    font-family: "BPG Nino Mtavruli", sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 14.9363px;
+    line-height: 14px;
+    color: #FFFFFF;
+    position: relative;
+    left: 25%;
+    width: fit-content;
+    height: fit-content;
+    top: 5px;
+}
+
+.admin-icon {
+    background: rgba(255, 48, 60, 0.75);
+    border-radius: 6px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 45%;
+    top: 5px;
+    width: 36px;
+}
+
+.regime-ltext {
+    font-family: "BPG Nino Mtavruli", sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 11.9363px;
+    line-height: 14px;
+    color: rgba(255, 255, 255, 0.92);
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    left: -27px;
+    top: 20px;
+}
+
+.controls  {
+    width: 97.38px;
+    height: 200.92px;
+    background: linear-gradient(267.13deg, rgba(0, 0, 0, 0.86) -71.21%, rgba(0, 0, 0, 0) 77.03%);
+    position: relative;
+    top: 5px;
+    left: 94.90%;
+}
+
+.control {
+    display: flex;
+    position: relative;
+    margin-top: 17px;
+}
+
+.control span {
+    position: relative; 
+    left: 40%;
+    top: 2px;
+    font-family: 'TBC Contractica CAPS';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15.8929px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+}
+
+.control svg {
+    width: 20.35px;
+    height: 22.61px;
+    position: relative;
+    left: 60%;
+}
+
+.control-inventor {
+    position: relative;
+    top: 10px;
+}
+
+.map {
+    position: relative;
+    bottom: 110px;
+    left: 15px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.notifications {
+    width: fit-content;
+    position: relative;
+    bottom: 160px;
+    left: 20px;
+}
+
+.success {
+    width: 235.9px;
+    height: 72.13px;
+    background: rgba(0, 255, 56, 0.44);
+    border-radius: 5px;
+    border-left: 2px solid rgba(97, 255, 113, 1);
+}
+
+.middle {
+    position: relative;
+    top: 30%;
+    left: 5%;
+    display: flex;
+}
+
+.success-cont {
+    background: #2FFF69;
+    backdrop-filter: blur(1.94958px);
+    border-radius: 5.84874px;
+    width: 40.17px;
+    height: 32.17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notif-text {
+    font-family: 'BPG Nino Mtavruli';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 13.7046px;
+    line-height: 16px;
+    color: #FFFFFF;
+    position: relative;
+    left: 5%;
+}
+
+.notif-ltext {
+    font-family: 'BPG Nino Mtavruli';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12.9363px;
+    line-height: 14px;
+    color: rgba(255, 255, 255, 0.92);
+}
+
+.fail {
+    width: 235.9px;
+    height: 72.13px;
+    background: rgba(255, 11, 69, 0.39);
+    border-left: 2px solid rgba(255, 47, 84, 1);
+    position: relative;
+    top: 20px;
+    border-radius: 5px;
+}
+
+.fail-cont {
+    background: rgba(255, 47, 84, 1);
+    backdrop-filter: blur(1.94958px);
+    border-radius: 5.84874px;
+    width: 40.17px;
+    height: 32.17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.armor {
+    display: flex;
+}
+
+.armor-health-cont {
+    display: flex;
+    position: relative;
+    bottom: 120px;
+    left: 20px;
+    width: fit-content;
+}
+
+.armour-progress {
+    background: rgba(0, 0, 0, 0.32);
+    width: 135px;
+    height: 11px;
+    border-radius: 10px;
+    position: relative;
+    top: 20%;
+}
+
+.aprogress {
+    border-radius: 10px;
+    width: 50%;
+    height: 11px;
+    background-color: white;
+}
+
+.aprogress span {
+    opacity: 0;
+}
+
+.armour-svg {
+    background: rgba(0, 0, 0, 0.32);
+    border-radius: 3.99124px 0px 0px 3.99124px;
+    width: 18px;
+    height: 22px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.armor-svg svg{
+    width: 150px;
+}
+
+.health {
+    display: flex;
+    margin-left: 5px;
+}
+
+.health-progress {
+    background: rgba(0, 0, 0, 0.32);
+    width: 135px;
+    height: 11px;
+    border-radius: 10px;
+    position: relative;
+    top: 20%;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.hprogress {
+    border-radius: 10px;
+    width: 50%;
+    height: 11px;
+    background-color: rgba(255, 59, 59, 1);
+}
+
+.hprogress span {
+    opacity: 0;
+}
+
+.health-svg {
+    background: rgba(0, 0, 0, 0.32);
+    width: 18px;
+    height: 22px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.32);
+    border-radius: 3.99px 0px 0px 3.99px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.health-svg svg{
+    width: 150px;
+}
+
+.details-cont {
+    width: 230px;
+    height: 220px;
+    position: absolute;
+    bottom: 25px;
+    left: 18%;
+}
+
+.cash {
+    display: flex;
+    position: relative;
+    top: 15px;
+    gap: 3px;
+}
+
+.cash-svg {
+    position: relative;
+    bottom: 3px;
+}
+
+.cash-int {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: right;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.bank {
+    display: flex;
+    position: relative;
+    top: 25px;
+    gap: 3px;
+}
+
+.bank-svg {
+    position: relative;
+}
+
+.bank-int {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    color: rgba(255, 255, 255, 0.58);
+}
+
+.green-zone {
+    width: 227.91px;
+    height: 32px;
+    background: linear-gradient(270deg, #7DFF40 -20.91%, rgba(53, 255, 98, 0) 98.48%);
+    border-radius: 6px;
+    transform: matrix(-1, 0, 0, -1, 0, 0); 
+    position: relative;
+    top: 40px;
+    display: flex;
+    justify-content: end;
+}
+
+.grz-text {
+    transform: rotate(180.96deg);
+    font-family: 'BPG Nino Mtavruli';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15.8182px;
+    line-height: 16px;
+    color: #FFFFFF;
+    position: relative;
+    bottom: 9px;
+    right: 12px;
+}
+
+.grz-svg {
+    width: 33px;
+    height: 32px;
+    background: #3EFF68;
+    box-shadow: 0px 0px 19px rgba(33, 113, 234, 0.54);
+    border-radius: 6px;
+    transform: rotate(180.96deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.demorgan {
+    width: 227.91px;
+    height: 32px;
+    background: linear-gradient(270deg, #4081FF -20.91%, rgba(53, 61, 255, 0) 98.48%);
+    border-radius: 6px;
+    transform: matrix(-1, 0, 0, -1, 0, 0); 
+    position: relative;
+    top: 60px;
+    display: flex;
+    justify-content: end;
+}
+
+.demorgan-text {
+    transform: rotate(180.96deg);
+    font-family: 'BPG Nino Mtavruli';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15.8182px;
+    line-height: 16px;
+    color: #FFFFFF;
+    position: relative;
+    bottom: 9px;
+    right: 25px;
+}
+
+.demorgan-time {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    transform: rotate(-0.24deg);
+    position: relative;
+    right: 12px;
+    top: 5px;
+}
+
+.demorgan-svg {
+    width: 33px;
+    height: 32px;
+    background: rgba(62, 139, 255, 1);
+    box-shadow: 0px 0px 19px 0px rgba(33, 113, 234, 0.54);
+    border-radius: 6px;
+    transform: rotate(180.96deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
