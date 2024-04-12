@@ -88,4 +88,4 @@ document.getElementById("month").innerHTML = name;
 // get full date
 
 const fDate = new Date()
-document.getElementById('date').innerHTML = `${fDate.getDay() - 1}/${fDate.getMonth()}/${fDate.getFullYear()}`
+document.getElementById('date').innerHTML = `${fDate.getDate()}/${fDate.getMonth() + 1}/${fDate.getFullYear()}`
