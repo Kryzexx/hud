@@ -5,6 +5,7 @@
 }
 
 body {
+    background-color: grey;
     overflow-x: hidden;
 }
 
@@ -708,17 +709,17 @@ body {
 .green-zone {
     width: 227.91px;
     height: 32px;
-    background: linear-gradient(270deg, #7DFF40 -20.91%, rgba(53, 255, 98, 0) 98.48%);
+    background: rgb(85,205,29);
+    background: linear-gradient(90deg, rgba(85,205,29,1) 1%, rgba(0,0,0,0) 100%);
     border-radius: 6px;
-    transform: matrix(-1, 0, 0, -1, 0, 0); 
+    /* transform: matrix(-1, 0, 0, -1, 0, 0);  */
     position: relative;
     top: 40px;
     display: flex;
-    justify-content: end;
 }
 
 .grz-text {
-    transform: rotate(180.96deg);
+    /* transform: rotate(180.96deg); */
     font-family: 'BPG Nino Mtavruli';
     font-style: normal;
     font-weight: 400;
@@ -726,8 +727,8 @@ body {
     line-height: 16px;
     color: #FFFFFF;
     position: relative;
-    bottom: 9px;
-    right: 12px;
+    top: 8px;
+    left: 10px;
 }
 
 .grz-svg {
@@ -736,7 +737,7 @@ body {
     background: #3EFF68;
     box-shadow: 0px 0px 19px rgba(33, 113, 234, 0.54);
     border-radius: 6px;
-    transform: rotate(180.96deg);
+    /* transform: rotate(180.96deg); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -746,17 +747,17 @@ body {
 .demorgan {
     width: 227.91px;
     height: 32px;
-    background: linear-gradient(270deg, #4081FF -20.91%, rgba(53, 61, 255, 0) 98.48%);
+    background: rgb(64,129,255);
+    background: linear-gradient(90deg, rgba(64,129,255,1) 0%, rgba(0,0,0,0) 100%);
     border-radius: 6px;
-    transform: matrix(-1, 0, 0, -1, 0, 0); 
+    /* transform: matrix(-1, 0, 0, -1, 0, 0);  */
     position: relative;
     top: 60px;
     display: flex;
-    justify-content: end;
 }
 
 .demorgan-text {
-    transform: rotate(180.96deg);
+    /* transform: rotate(180.96deg); */
     font-family: 'BPG Nino Mtavruli';
     font-style: normal;
     font-weight: 400;
@@ -764,8 +765,8 @@ body {
     line-height: 16px;
     color: #FFFFFF;
     position: relative;
-    bottom: 9px;
-    right: 25px;
+    top: 7px;
+    left: 35px;
 }
 
 .demorgan-time {
@@ -775,10 +776,10 @@ body {
     font-size: 14px;
     line-height: 17px;
     color: #FFFFFF;
-    transform: rotate(-0.24deg);
+    /* transform: rotate(-0.24deg); */
     position: relative;
-    right: 12px;
-    top: 5px;
+    left: 15px;
+    top: 7px;
 }
 
 .demorgan-svg {
