@@ -516,6 +516,21 @@ body {
     background: rgba(0, 255, 56, 0.44);
     border-radius: 5px;
     border-left: 2px solid rgba(97, 255, 113, 1);
+    animation: slide-left 0.9s ease 1;
+    opacity: 0;
+}
+
+@keyframes slide-left {
+    from {
+        position: relative;
+        left: -20px;
+        opacity: 0;
+    }
+    to {
+        position: relative;
+        left: 0;
+        opacity: 1;
+    }
 }
 
 .middle {
@@ -562,6 +577,8 @@ body {
     position: relative;
     top: 20px;
     border-radius: 5px;
+    opacity: 0;
+    animation: slide-left 0.9s ease 1;
 }
 
 .fail-cont {
@@ -671,7 +688,7 @@ body {
     height: 220px;
     position: absolute;
     bottom: 25px;
-    left: 27%;
+    left: 30%;
 }
 
 .cash {
