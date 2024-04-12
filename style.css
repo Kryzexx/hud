@@ -254,8 +254,8 @@ body {
 }
 
 .ammo-cont span{
-    position: relative;
-    left: 80%;
+    position: absolute;
+    left: 25%;
     top: 5px;
 }
 
@@ -267,13 +267,16 @@ body {
     line-height: 12px;
     letter-spacing: 0.02em;
     color: #FFFFFF;
+    position: absolute;
+    top: 15px;
+    margin-left: 25px;
 }
 
 .ammo-svg {
     background: rgba(0, 0, 0, 0.63);
     border-radius: 7.5px;
-    position: relative;
-    left: 55%;
+    position: absolute;
+    left: 75%;
     width: 35px;
     height: 34px;
     display: flex;
