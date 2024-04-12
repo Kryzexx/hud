@@ -1,269 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="font/bpg-nino-mtavruli-master/css/bpg-nino-mtavruli.min.css">
-    <title>Hud</title>
+    <title>Document</title>
+
+    <style>
+        .box {
+            position: absolute;
+            top: 500px;
+        }
+    </style>
 </head>
+
 <body>
-    <div class="container">
-        <div class="up-line">
-            <div class="time-cont">
-                <div class="hour">
-                    <span>19:23</span>
-                    <div class="date">
-                        <span>03/5/2023</span>
-                    </div>
-                </div>
-                <div class="month">
-                    <span>OCT</span>
-                </div>
-            </div>
-            <div class="star-cont">
-                <div class="star">
-                    <img src="img/star2.png" alt="star" width="55" height="55">
-                </div>
-                <div class="star">
-                    <img src="img/star2.png" alt="star" width="55" height="55">
-                </div>
-                <div class="star">
-                    <img src="img/star2.png" alt="star" width="55" height="55">
-                </div>
-                <div class="star">
-                    <img src="img/star2.png" alt="star" width="55" height="55">
-                </div>
-                <div class="star">
-                    <img src="img/star2.png" alt="star" width="55" height="55">
-                </div>
-                <div class="star">
-                    <img src="img/star2.png" alt="star" width="55" height="55">
-                </div>
-            </div>
-        </div>
-        <div class="logo-bar">
-            <div class="criminal">
-                <span>CRIMINAL</span>
-            </div>
-            <div class="roleplay">
-                <span>ROLE PLAY</span>
-            </div>
-            <div class="logo-img">
-                <img src="img/logo.png" alt="logo" width="90" height="90">
-            </div>
-        </div>
-        <div class="online-line">
-            <div class="online">
-                <div class="id-number">
-                    <span>120</span>
-                </div>
-                <div class="id">
-                    <span>ID</span>
-                </div>
-                <div class="online-p">
-                    <div class="online-logo">
-                        <img src="img/onlineon.png" alt="onlineon" width="20" height="20">
-                    </div>
-                    <div class="online-text">
-                        Online: <span>134</span>
-                    </div>
-                </div>
-                <div class="ip-cont">
-                    <span>Server:GE</span>
-                </div>
-            </div>
-        </div>
-        <div class="gun-line">
-            <div class="gun">
-                <span>AK-47</span>
-            </div>
-        </div>
-        <div class="ammo-line">
-            <div class="ammo-cont">
-                <div class="ammo-counter">
-                    <span>25</span><span>/423</span>
-                </div>
-                <div class="ammo-svg">
-                    <div class="ammo-img">
-                        <img src="img/bullet.png" alt="bullet" height="30" width="30">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="gift-line">
-            <div class="gift-hour-cont">
-                <div class="gift-text">
-                    <span lang="ge">ითამაშე 5 საათი</span>
-                    <div class="gift-ltext">
-                        <span>და მიიღე</span> <span>100.000₾</span>
-                    </div>
-                    <div class="elapsed-time">
-                        <div class="elapsed-text">
-                            <span>დარჩენილია</span> <span>3:42:2</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="gift-imgs">
-                    <div class="trophy-img">
-                        <img src="img/trophy.png" alt="" height="110" width="110"> 
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="admin-line">
-            <div class="admin-cont">
-                <div class="admin-regime">
-                    <div class="regime-text">
-                        <span lang="ge">რეჟიმი</span>
-                        <div class="regime-ltext">
-                            <span lang="ge">ადმინისტრატორი</span>
-                        </div>
-                    </div>
-                    <div class="admin-icon">
-                        <svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M20.2396 9.86934C20.4113 9.58776 20.5323 9.30326 20.6014 9.01738C20.9934 7.3943 20.624 5.54436 20.6081 5.46628C20.5712 5.28522 20.4522 5.13198 20.2864 5.05252C20.1779 5.00042 20.0579 4.98443 19.9419 5.00303C20.1 4.48567 20.1485 4.00336 20.0852 3.56132C19.8485 1.90781 18.8214 0.330684 18.7779 0.264286C18.6765 0.110124 18.5092 0.0126777 18.326 0.00115023C18.1424 -0.0103773 17.9648 0.0652434 17.845 0.205418C17.827 0.226475 17.3993 0.73046 16.9994 1.43825C16.4336 2.4393 16.2027 3.33861 16.3133 4.1111C16.3164 4.13278 16.3202 4.15445 16.3236 4.17612C16.1977 4.0799 16.117 4.02365 16.1032 4.01412C15.9532 3.91068 15.7643 3.88332 15.5916 3.93957C15.4187 3.99598 15.2817 4.12986 15.2205 4.30215C15.2113 4.32813 14.9933 4.94708 14.8744 5.74571C14.7064 6.87526 14.8142 7.79254 15.1947 8.47205C15.6213 9.2341 16.2433 9.89732 16.7465 10.362C16.7508 10.4251 16.7557 10.4868 16.7609 10.5472C16.5553 10.6721 16.3732 10.8131 16.2169 10.9708C15.2786 11.9179 14.7029 13.2383 14.4963 13.7693C13.3777 14.4568 12.0941 14.8196 10.7725 14.8196C9.45905 14.8196 8.18448 14.4619 7.07089 13.783C6.86917 13.2615 6.29162 11.9263 5.34511 10.9709C5.18871 10.8131 5.00667 10.6721 4.80113 10.5473C4.80632 10.4868 4.8112 10.4251 4.81548 10.362C5.31963 9.89639 5.94097 9.23333 6.3673 8.47221C6.74771 7.79254 6.85559 6.87526 6.68743 5.74571C6.56872 4.94708 6.35067 4.32813 6.34136 4.30215C6.28017 4.12986 6.14315 3.99598 5.97042 3.93957C5.79754 3.88317 5.60863 3.91068 5.45879 4.01412C5.4449 4.02365 5.36373 4.08021 5.23738 4.17689C5.24028 4.15814 5.24349 4.13954 5.24623 4.12094C5.35671 3.34844 5.12599 2.44914 4.56019 1.44809C4.16011 0.740296 3.7324 0.236466 3.7144 0.215255C3.59477 0.0750802 3.41685 -0.000540486 3.23344 0.0109871C3.05018 0.0225146 2.88294 0.119961 2.78162 0.274123C2.73798 0.340521 1.71106 1.91764 1.47439 3.57115C1.41153 4.01012 1.45868 4.48859 1.61401 5.0018C1.50003 4.98474 1.38223 5.00118 1.27557 5.05237C1.10986 5.13198 0.990841 5.28522 0.953915 5.46628C0.938045 5.54421 0.568628 7.39415 0.960628 9.01738C1.02975 9.30311 1.15075 9.58761 1.32242 9.86934C1.14114 9.88333 0.976498 9.98093 0.876705 10.1343C0.776301 10.2888 0.753566 10.4818 0.815059 10.6558C0.841609 10.7307 1.47851 12.5053 2.64917 13.6871C3.19636 14.2394 4.04368 14.5903 5.1678 14.7297C5.57399 14.7802 5.94234 14.7928 6.20907 14.7928C6.30672 14.7928 6.39065 14.7911 6.45794 14.7888C7.75616 15.5819 9.24192 16 10.7725 16C12.3027 16 13.7895 15.5815 15.0879 14.7884C15.1576 14.7907 15.2472 14.7927 15.3529 14.7927C15.6197 14.7927 15.988 14.7801 16.3942 14.7297C17.5183 14.5903 18.3658 14.2394 18.913 13.6871V13.687C20.0837 12.5053 20.7204 10.7307 20.747 10.6558C20.8084 10.4818 20.7857 10.2888 20.6853 10.1343C20.5855 9.98093 20.4209 9.88333 20.2396 9.86934ZM2.88279 9.93359C2.45951 9.52244 2.18927 9.1116 2.09925 8.73841C1.92026 7.99742 1.93582 7.16898 1.9877 6.56524C2.31989 6.80194 2.68412 7.10243 2.97846 7.43703C2.99814 7.4647 3.02027 7.49083 3.04484 7.51496C3.27372 7.78993 3.45194 8.08565 3.52458 8.3869C3.65336 8.92009 3.67655 9.49846 3.66038 9.98908C3.65504 10.0195 3.65244 10.0504 3.65199 10.0811C3.41258 10.0197 3.15592 9.97048 2.88279 9.93359ZM5.45955 5.51977C5.61397 6.26875 5.69896 7.26258 5.34648 7.89229C5.18459 8.18125 4.98485 8.45622 4.77397 8.70875C4.74727 8.50771 4.71111 8.30636 4.66319 8.10793C4.57561 7.74474 4.40349 7.38401 4.15065 7.02819C4.16148 7.0099 4.17262 6.99053 4.18391 6.97101C4.5518 6.3871 5.05702 5.87636 5.45955 5.51977ZM2.63407 3.73961C2.74195 2.98586 3.06208 2.22443 3.33323 1.68417C3.74934 2.33617 4.18818 3.24054 4.08625 3.95249C3.97822 4.70685 3.65412 5.46044 3.38038 5.99194C2.96763 5.35009 2.53168 4.45524 2.63407 3.73961ZM3.47849 12.8533C2.94428 12.3141 2.53122 11.5982 2.2648 11.055C2.78208 11.0916 3.39686 11.1887 3.89689 11.4044C3.92436 11.4194 3.9532 11.4326 3.98326 11.4432C4.18879 11.5404 4.3716 11.6593 4.51549 11.8046C5.04985 12.3439 5.45406 13.0577 5.71178 13.5974C4.95433 13.5457 3.98234 13.3619 3.47849 12.8533ZM17.9051 10.0824C17.8829 9.57316 17.9001 8.95452 18.0373 8.38706C18.114 8.0689 18.3097 7.75611 18.559 7.46746C18.5611 7.46501 18.5634 7.46255 18.5654 7.46009C18.8629 7.11718 19.2357 6.80855 19.5751 6.56616C19.627 7.16852 19.6422 7.99497 19.4626 8.73841C19.3724 9.11175 19.1024 9.52244 18.6791 9.93359C18.4041 9.97063 18.1459 10.0203 17.9051 10.0824ZM18.2262 1.67418C18.4973 2.21459 18.8175 2.97618 18.9252 3.72977C19.0273 4.44202 18.5906 5.3384 18.1777 5.98149C17.9045 5.45153 17.5815 4.69978 17.4732 3.94265C17.3712 3.23055 17.8101 2.32618 18.2262 1.67418ZM16.2154 7.89214C15.8644 7.2655 15.9497 6.26998 16.1037 5.51977C16.518 5.88665 17.0413 6.41707 17.4126 7.02619C17.159 7.38262 16.9864 7.74397 16.8985 8.10793C16.8506 8.30621 16.8146 8.50756 16.7879 8.70875C16.577 8.45637 16.3773 8.18125 16.2154 7.89214ZM18.0834 12.8533C17.5795 13.3619 16.6074 13.5459 15.8501 13.5974C16.108 13.0576 16.512 12.3439 17.0464 11.8046C17.4655 11.3815 18.2143 11.1812 18.8954 11.0945C18.9603 11.0983 19.0258 11.0906 19.0889 11.0727C19.1597 11.0656 19.2293 11.0598 19.2971 11.055C19.0306 11.5982 18.6176 12.3141 18.0834 12.8533Z" fill="white"/>
-                        </svg>                            
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="box">
+        <span>hp:</span><span id="hp">0</span>
+        <span>max_hp:</span><span id="max_hp">0</span>
+        <span>arm:</span><span id="arm">0</span>
+        <span>breath:</span><span id="breath">0</span>
+        <span>wanted:</span><span id="wanted">0</span>
+        <span>weapon:</span><span id="weapon">0</span>
+        <span>ammo:</span><span id="ammo">0</span>
+        <span>max_ammo:</span><span id="max_ammo">0</span>
+        <span>money:</span><span id="money">0</span>
+        <span>speed:</span><span id="speed">0</span>
+
+        <span>1:</span><span id="s1">0</span>
+        <span>2:</span><span id="s2">0</span>
     </div>
-    <div class="controls">
-        <div class="control-inventor">
-            <div class="control">
-                <span>M</span>
-                <svg width="23" height="26" viewBox="0 0 23 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M21.4785 9.76429L11.3038 1.85059L1.12899 9.76429V22.2001C1.12899 22.7998 1.36721 23.3749 1.79124 23.7989C2.21527 24.2229 2.79038 24.4612 3.39005 24.4612H19.2175C19.8171 24.4612 20.3922 24.2229 20.8163 23.7989C21.2403 23.3749 21.4785 22.7998 21.4785 22.2001V9.76429Z" stroke="white" stroke-width="2.15688" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M14.6953 24.4611V13.1558H7.91214V24.4611" stroke="white" stroke-width="2.15688" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>                
-            </div>
-            <div class="control">
-                <span>L</span>
-                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3.67244 11.0604H5.84975V6.70577C5.84975 3.09823 8.77416 0.173828 12.3817 0.173828C15.9892 0.173828 18.9136 3.09823 18.9136 6.70577V11.0604H21.091C22.8954 11.0604 24.3569 12.5219 24.3569 14.3264V20.8583C24.3569 22.6628 22.8954 24.1243 21.091 24.1243H3.67244C1.86799 24.1243 0.406466 22.6628 0.406466 20.8583V14.3264C0.406466 12.5219 1.86799 11.0604 3.67244 11.0604ZM16.7363 6.70577C16.7363 4.30093 14.7865 2.35114 12.3817 2.35114C9.97686 2.35114 8.02707 4.30093 8.02707 6.70577V11.0604H16.7363V6.70577ZM2.58378 20.8583C2.58378 21.4598 3.07096 21.947 3.67244 21.947H21.091C21.6924 21.947 22.1796 21.4598 22.1796 20.8583V14.3264C22.1796 13.7249 21.6924 13.2377 21.091 13.2377H3.67244C3.07096 13.2377 2.58378 13.7249 2.58378 14.3264V20.8583Z" fill="white"/>
-                </svg>                  
-            </div>
-            <div class="control">
-                <span>G</span>
-                <svg width="21" height="25" viewBox="0 0 21 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5.53589 1.46191L1.51623 5.48157L5.53589 9.50123" stroke="white" stroke-width="2.15688" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M19.6045 11.5109V9.5011C19.6045 8.43502 19.181 7.41261 18.4272 6.65878C17.6733 5.90494 16.6509 5.48145 15.5848 5.48145H1.51603" stroke="white" stroke-width="2.15688" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M15.5848 23.5698L19.6045 19.5502L15.5848 15.5305" stroke="white" stroke-width="2.15688" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M1.51603 13.521V15.5308C1.51603 16.5969 1.93953 17.6193 2.69336 18.3732C3.44719 19.127 4.46961 19.5505 5.53569 19.5505H19.6045" stroke="white" stroke-width="2.15688" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>                
-            </div>
-            <div class="control">
-                <span>T</span>
-                <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1.51603 13.975C1.51603 14.508 1.72778 15.0192 2.10469 15.3962C2.48161 15.7731 2.99282 15.9848 3.52586 15.9848H15.5848L19.6045 20.0045V3.92585C19.6045 3.39281 19.3927 2.8816 19.0158 2.50468C18.6389 2.12776 18.1277 1.91602 17.5947 1.91602H3.52586C2.99282 1.91602 2.48161 2.12776 2.10469 2.50468C1.72778 2.8816 1.51603 3.39281 1.51603 3.92585V13.975Z" stroke="white" stroke-width="2.15688" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>                                  
-            </div>
-            <div class="control">
-                <span>I</span>
-                <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3.43351 5.71997H19.5121C20.6221 5.71997 21.522 6.6198 21.522 7.7298V17.7789C21.522 18.8889 20.6221 19.7888 19.5121 19.7888H3.43351C2.32351 19.7888 1.42368 18.8889 1.42368 17.7789V7.7298C1.42368 6.6198 2.32351 5.71997 3.43351 5.71997Z" stroke="white" stroke-width="2.15688" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M7.45311 19.7887V3.71002C7.45311 3.17698 7.66486 2.66578 8.04178 2.28886C8.4187 1.91194 8.9299 1.7002 9.46294 1.7002H13.4826C14.0156 1.7002 14.5268 1.91194 14.9038 2.28886C15.2807 2.66578 15.4924 3.17698 15.4924 3.71002V19.7887" stroke="white" stroke-width="2.15688" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>                                 
-            </div>
-        </div>
-    </div>
-    <div class="notifications">
-        <div class="success">
-            <div class="middle">
-                <div class="success-cont">
-                    <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.57141 7.19399L6.0064 11.5058C7.14299 12.6108 9.03003 12.2646 9.70039 10.8281L14.2437 1.09253" stroke="white" stroke-width="1.68964"/>
-                    </svg>                    
-                </div>
-                <div class="notif-text">
-                    <span lang="ge" >ინფორმაცია!</span>
-                    <div class="notif-ltext">
-                        <span lang="ge">თქვენ წარმატებით დაქოქეთ
-                            ავტომობილი</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="fail">
-            <div class="middle">
-                <div class="fail-cont">
-                    <span>X</span>                                    
-                </div>
-                <div class="notif-text">
-                    <span lang="ge" >ინფორმაცია!</span>
-                    <div class="notif-ltext">
-                        <span lang="ge">თქვენ წარმატებით დაქოქეთ
-                            ავტომობილი</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="armor-health-cont">
-        <div class="armor">
-            <div class="armour-progress">
-                <div class="aprogress">
-                    <span>s</span>
-                </div>
-            </div>
-            <div class="armour-svg">
-                <img src="img/armour.png" alt="armor">
-            </div>
-        </div>
-        <div class="health">
-            <div class="health-svg">
-                <img src="img/health.png" alt="armor">
-            </div>
-            <div class="health-progress">
-                <div class="hprogress">
-                    <span>s</span>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="details-cont">
-        <div class="money-cont">
-            <div class="cash">
-                <div class="cash-svg">
-                    <img src="img/wallet.png" alt="wallet" width="30" height="30">
-                </div>
-                <div class="cash-int">
-                    <span>200.000₾</span>
-                </div>
-            </div>
-            <div class="bank">
-                <div class="bank-svg">
-                    <img src="img/bank.png" alt="bank" width="18" height="18">
-                </div>
-                <div class="bank-int">
-                    <span>200.000₾</span>
-                </div>
-            </div>
-        </div>
-        <div class="green-zone">
-            <div class="grz-svg">
-                <img src="img/grz.png" alt="grz" width="16" height="17">
-            </div>
-            <div class="grz-text">
-                <span lang="ge">მწვანე ზონა</span>
-            </div>
-        </div>
-        <div class="demorgan">
-            <div class="demorgan-svg">
-                <img src="img/cuffs.png" alt="cuffs" width="16" height="17">
-            </div>
-            <div class="demorgan-time">
-                <span>00:69</span>
-            </div>
-            <div class="demorgan-text">
-                <span lang="ge">დემორგანი</span>
-            </div>
-        </div>
-    </div>
-    <!-- <div class="map">
-        <img src="img/map-test.png" alt="maptest" width="312" height="217">
-    </div> -->
-    <script src="app.js"></script>
+    <script>
+        // tell our plugin which default components we want to hide ("interface" means all components)
+        // list of all components are here: https://github.com/ZOTTCE/samp-cef/blob/664179f058706d84d7757b01094e8ac9ce08b82a/cef-interface/src/components.rs#L47
+        // (ammo, weapon, health, etc)
+        cef.emit("game:hud:setComponentVisible", "interface", false);
+        cef.emit("game:hud:setComponentVisible", "radar", false);  // how to disable a radar
+        // ask the plugin to call our "game:data:playerStats" event every 50 ms. (pass false to stop it)
+        cef.emit("game:data:pollPlayerStats", true, 50);
+
+        // subscribe to an event that triggered from the plugin
+        // arm = armour
+        cef.on("game:data:playerStats", (hp, max_hp, arm, breath, wanted, weapon, ammo, max_ammo, money, speed) => {
+            document.getElementById("hp").innerText = `${hp}`;
+            document.getElementById("max_hp").innerText = `${max_hp}`;
+            document.getElementById("arm").innerText = `${arm}`;
+            document.getElementById("breath").innerText = `${breath}`;
+            document.getElementById("wanted").innerText = `${wanted}`;
+            document.getElementById("weapon").innerText = `${weapon}`;
+            document.getElementById("ammo").innerText = `${ammo}`;
+            document.getElementById("max_ammo").innerText = `${max_ammo}`;
+            document.getElementById("money").innerText = `${money}`;
+            document.getElementById("speed").innerText = `${speed}`;
+        });
+
+        cef.on("cool", (s1, s2) => {
+            document.getElementById("s1").innerText = `${s1}`;
+            document.getElementById("s2").innerText = `${s2}`;
+        });
+    </script>
 </body>
+
 </html>
