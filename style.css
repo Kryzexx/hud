@@ -5,7 +5,6 @@
 }
 
 body {
-    background-color: grey;
     overflow-x: hidden;
 }
 
@@ -214,6 +213,11 @@ body {
     font-size: 15.775px;
     line-height: 17px;
     color: rgba(255, 255, 255, 0.93);
+    position: static;
+}
+
+.gun span {
+    position: static;
 }
 
 .ammo-line {
