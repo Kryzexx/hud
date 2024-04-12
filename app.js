@@ -29,9 +29,12 @@ cef.on("game:data:playerStats", (hp, max_hp, arm, breath, wanted, weapon, ammo, 
     else if(weapon == 38) {
         document.getElementById('gun').textContent = `Minigun`
     }
+    else if(weapon == 1) {
+        document.getElementById('gun').textContent = `Fist`
+    }
     for(i = 0; i <= 15; i++) {
         if(weapon == i) {
-            document.getElementById('gun').textContent = 'Fist'
+            document.getElementById('gun').textContent = 'Blade'
         }
     }
     document.getElementById("ammo").innerText = `${ammo}`;
@@ -56,3 +59,33 @@ cef.on("data:pool:fail", () => {
         document.querySelector('.fail').style.opacity = 0
     }, 2000);
 }) 
+
+getHour()
+
+function getHour() {
+    const h = new Date();
+    let hour = h.getHours();
+    let min = h.getMinutes();
+    if(min < 10) {
+        document.getElementById("hour").innerHTML = `${hour}:0${min}`;    
+    }
+    else {
+        document.getElementById("hour").innerHTML = `${hour}:${min}`;  
+    }   
+}
+
+setInterval(() => {
+    getHour()
+}, 1000);
+
+
+// get month 
+const month = ["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"];
+const d = new Date();
+let name = month[d.getMonth()];
+document.getElementById("month").innerHTML = name;
+
+// get full date
+
+const fDate = new Date()
+document.getElementById('date').innerHTML = `${fDate.getDay() - 1}/${fDate.getMonth()}/${fDate.getFullYear()}`
