@@ -9,6 +9,7 @@
 }
 
 body {
+    background-color: grey;
     overflow-x: hidden;
 }
 
@@ -505,7 +506,7 @@ body {
 .notifications {
     width: fit-content;
     position: relative;
-    bottom: 160px;
+    bottom: 50px;
     left: 20px;
     font-family: "BPG Nino Mtavruli", sans-serif;
 }
@@ -583,7 +584,7 @@ body {
 .armor-health-cont {
     display: flex;
     position: relative;
-    bottom: 120px;
+    bottom: 15px;
     left: 20px;
     width: fit-content;
 }
@@ -671,7 +672,7 @@ body {
     height: 220px;
     position: absolute;
     bottom: 25px;
-    left: 18%;
+    left: 30%;
 }
 
 .cash {
