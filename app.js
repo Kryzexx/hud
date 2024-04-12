@@ -1,4 +1,4 @@
-cef.emit("game:hud:setComponentVisible", "interface", false);
+/*cef.emit("game:hud:setComponentVisible", "interface", false);
 cef.emit("game:hud:setComponentVisible", "radar", true);
 cef.emit("game:data:pollPlayerStats", true, 50);
 
@@ -27,4 +27,4 @@ cef.on("data:pool:fail", () => {
         document.querySelector('.fail').classList.remove('anim')
         document.querySelector('.fail').style.opacity = 0
     }, 2000);
-}) 
+}) */
