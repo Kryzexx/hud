@@ -609,8 +609,8 @@ body {
 .armor-health-cont {
     display: flex;
     position: relative;
-    bottom: 15px;
-    left: 80px;
+    bottom: 8px;
+    left: 93px;
     width: fit-content;
 }
 
@@ -697,7 +697,7 @@ body {
     height: 220px;
     position: absolute;
     bottom: 25px;
-    left: 28%;
+    left: 25%;
 }
 
 .cash {
