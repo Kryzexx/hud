@@ -609,8 +609,8 @@ body {
 .armor-health-cont {
     display: flex;
     position: relative;
-    bottom: 8px;
-    left: 93px;
+    bottom: 2px;
+    left: 100px;
     width: fit-content;
 }
 
