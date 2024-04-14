@@ -60,6 +60,15 @@ cef.on("data:pool:fail", () => {
     }, 2000);
 }) 
 
+function setWanted(wanted) {
+    for(i = 0; i < wanted; i++) {
+        let v = document.getElementById(`star${i}`)
+        v.style.opacity = 1
+    }
+}
+
+
+setWanted(3)
 getHour()
 
 function getHour() {
