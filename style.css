@@ -83,6 +83,7 @@ body {
     width: 27.31px;
     height: 27.31px;
     transform: rotate(10.6deg);
+    opacity: 0.5;
 }
 
 .logo-bar {
