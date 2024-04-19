@@ -129,7 +129,6 @@ body {
 }
 
 .online-line {
-    border: solid 2px yellow;
     position: relative;
     bottom: 30px;
 }
@@ -836,4 +835,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width: 1700px) {
+    .container {
+        zoom: 0.90;
+    }
 }
