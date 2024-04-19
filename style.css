@@ -15,7 +15,7 @@ body {
 .container {
     width: 540px;
     height: 400px;
-    position: relative;
+    position: absolute;
     left: 71.60%;
 }
 
@@ -128,10 +128,16 @@ body {
     bottom: 40px;
 }
 
-.online {
-    display: flex;
+.online-line {
+    border: solid 2px yellow;
     position: relative;
     bottom: 30px;
+}
+
+.online {
+    display: flex;
+    /* position: relative;
+    bottom: 30px; */
 }
 
 .id-number {
@@ -465,15 +471,15 @@ body {
     width: 97.38px;
     height: 200.92px;
     background: linear-gradient(267.13deg, rgba(0, 0, 0, 0.86) -71.21%, rgba(0, 0, 0, 0) 77.03%);
-    position: relative;
-    top: 5px;
+    position: absolute;
+    top: 46%;
     left: 94.90%;
 }
 
 .control {
     display: flex;
     position: relative;
-    margin-top: 17px;
+    margin-top: 16px;
 }
 
 .control span {
@@ -499,7 +505,7 @@ body {
 
 .control-inventor {
     position: relative;
-    top: 10px;
+    bottom: 5px;
 }
 
 .map {
@@ -609,9 +615,9 @@ body {
 
 .armor-health-cont {
     display: flex;
-    position: relative;
-    top: 18px;
-    left: 110px;
+    position: absolute;
+    top: 70%;
+    left: 105px;
     width: fit-content;
 }
 
