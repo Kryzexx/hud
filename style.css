@@ -12,11 +12,14 @@ body {
     overflow-x: hidden;
 }
 
+.up {
+    display: flex;
+    justify-content: end;
+}
+
 .container {
     width: 540px;
     height: 400px;
-    position: absolute;
-    left: 71.60%;
 }
 
 .up-line {
@@ -129,6 +132,7 @@ body {
 }
 
 .online-line {
+    border: solid 2px yellow;
     position: relative;
     bottom: 30px;
 }
@@ -466,13 +470,15 @@ body {
     top: 20px;
 }
 
+.middles {
+    display: flex;
+    justify-content: end;
+}
+
 .controls  {
     width: 97.38px;
     height: 200.92px;
     background: linear-gradient(267.13deg, rgba(0, 0, 0, 0.86) -71.21%, rgba(0, 0, 0, 0) 77.03%);
-    position: absolute;
-    top: 46%;
-    left: 94.90%;
 }
 
 .control {
