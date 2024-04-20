@@ -14,7 +14,8 @@ body {
 
 .up {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .container {
@@ -132,7 +133,6 @@ body {
 }
 
 .online-line {
-    border: solid 2px yellow;
     position: relative;
     bottom: 30px;
 }
@@ -472,7 +472,8 @@ body {
 
 .middles {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .controls  {
