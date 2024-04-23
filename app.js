@@ -39,6 +39,7 @@ cef.on("game:data:playerStats", (hp, max_hp, arm, breath, wanted, weapon, ammo, 
     }
     document.getElementById("ammo").innerText = `${ammo}`;
     document.getElementById("max-ammo").innerText = `/${max_ammo}`;
+    setWanted(wanted)
 });
 
 
@@ -67,8 +68,6 @@ function setWanted(wanted) {
     }
 }
 
-
-setWanted(3)
 getHour()
 
 function getHour() {
