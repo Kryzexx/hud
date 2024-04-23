@@ -62,8 +62,11 @@ cef.on("data:pool:fail", () => {
 }) 
 
 function setWanted(wanted) {
+    let v = document.getElementById(`star${i}`)
+    for(i = 0; i < 6; i++) {
+        v.style.opacity = 0.5
+    }
     for(i = 0; i < wanted; i++) {
-        let v = document.getElementById(`star${i}`)
         v.style.opacity = 1
     }
 }
